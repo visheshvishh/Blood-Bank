@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+	<title>Rewards</title>
+	<link rel="stylesheet" type="text/css" href="reward.css">
+</head>
+<body>
+	<div class="container">
+		<button type="submit" class="btn" onclick="openPopup()">Get Reward!!!</button>
+		<div class="popup" id="popup">
+			<img src="img/My_coupon.png">
+				<h2>Thank You</h2>
+				<p>You will get some rewards from Blood Kinship</p>
+				<button type="button" onclick="closePopup()">OK</button>	
+			</div>
+	</div>
+	<script type="text/javascript">
+		let popup=document.getElementById("popup");
+		function openPopup() {
+			popup.classList.add("open-popup");
+		}
+		function closePopup() {
+			popup.classList.remove("open-popup");
+		}
+	</script>
+
+</body>
+</html>
